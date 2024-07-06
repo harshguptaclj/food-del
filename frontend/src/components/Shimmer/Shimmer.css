@@ -23,6 +23,33 @@
     gap: 30px;
     row-gap: 50px; /* Margin between cards */
 }
+.cards {
+    position: relative;
+    width: 100%; /* Adjusted width to fit more cards in a row */
+    height: auto; /* Adjusted height */
+    background-color: #eaeaea;
+    box-shadow: 0px 0px 10px #00000015;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px; /* Margin between cards */
+    font-size: larger;
+}
+
+.cards h3{
+    font: bolder;
+    font-size: inherit;
+    text-align: center;
+    margin: auto;
+    color:black;
+    padding: auto;
+}
+
+
 
 .shimmer {
     position: absolute;
@@ -40,19 +67,4 @@
     }
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-}
 
-h2 {
-    margin: 0 0 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-p {
-    margin: 0;
-    font-size: 16px;
-    color: #666;
-}
