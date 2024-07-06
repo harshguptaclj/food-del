@@ -1,0 +1,58 @@
+.bodi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping of cards to the next line */
+    padding: 20px; /* Add padding to the container */
+    background-color:transparent;
+    margin-top: 0;
+}
+
+.card {
+    position: relative;
+    width: 280px; /* Adjusted width to fit more cards in a row */
+    height: 350px; /* Adjusted height */
+    background-color: #eaeaea;
+    box-shadow: 0px 0px 10px #00000015;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px; /* Margin between cards */
+}
+
+.shimmer {
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(110deg, transparent 40%, rgb(254, 253, 253) 50%, transparent 60%);
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
