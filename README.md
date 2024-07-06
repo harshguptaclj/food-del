@@ -27,6 +27,7 @@ Further I created the shopping cart functionality so that user can add food item
 ## ScreenShot
 
 ![Home Page](frontend/src/assets/Screenshot%20(69).png)
+![Home Page](frontend/src/assets/Screenshot%20(70).png)
 <img src="https://github.com/harshguptaclj/food-del/blob/main/frontend/src/assets/Screenshot%20(70).png" alt="Project Logo" width="500" height="600">
 
 
