@@ -3,8 +3,13 @@ import './Navbar.css'
 import {assets} from '../../assets/assets.js'
 import {Link, useNavigate} from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext.jsx';
+import { toast } from 'react-toastify';
 
 const Navbar = ({setShowLogin}) => {
+
+  const searchHandler=()=>{
+    toast.info('Search feature is under development.')
+  }
 
   const [menu, setMenu] = useState("home");
 
@@ -28,7 +33,7 @@ const Navbar = ({setShowLogin}) => {
         <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>contact us</a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
+        <img onClick={searchHandler} src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
           <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
           <div className={getTotalCartAmount()===0?"":"dot"}></div>

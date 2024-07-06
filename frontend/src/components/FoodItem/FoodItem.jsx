@@ -2,16 +2,20 @@ import React, { useContext } from 'react'
 import './FoodItem.css'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext';
+import {toast} from 'react-toastify'
 
 
 const FoodItem = ({id,name, price, description, image}) => {
   
     const {cartItems, addToCart, removeFromCart,url} = useContext(StoreContext);
 
+    const clickHandler=()=>{
+      toast.info("Kindly click on + button to add items.");
+    }
     return (
     <div className='food-item'>
       <div className="food-item-img-container">
-        <img src={url+"/images/"+image} alt="" className="food-item-image" />
+        <img onClick={clickHandler} src={url+"/images/"+image} alt="" className="food-item-image" />
         {!cartItems[id] 
             ?<img className='add' onClick={()=>addToCart(id)} src={assets.add_icon_white} alt=""/>
             :<div className='food-item-counter'>
@@ -21,7 +25,7 @@ const FoodItem = ({id,name, price, description, image}) => {
             </div>
         }
       </div>
-      <div className="food-item-info">
+      <div onClick={clickHandler} className="food-item-info">
         <div className="food-item-name-rating">
             <p>{name}</p>
             <img src={assets.rating_starts} alt="" />
