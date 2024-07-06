@@ -1,6 +1,6 @@
 # Tomato - Online Food Delivery Website 
 
-![Project Logo](https://drive.google.com/file/d/1BgVQnba65JBoCsCQFrY1oVzCvWayf5gt/view?usp=sharing)
+![Project Logo](frontend/src/assets/logo.png)
 
 ## Live Demo
 
