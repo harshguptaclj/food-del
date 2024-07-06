@@ -4,7 +4,7 @@ import './Shimmer.css'
 const Shimmer = () => {
   return (
     <div className="bodi">
-      {Array.from({ length: 10 }).map((el, i) => {
+      {Array.from({ length: 32 }).map((el, i) => {
         return (
           <div key={i} className="card">
             <div className="shimmer"></div>
