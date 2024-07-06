@@ -26,6 +26,7 @@ Further I created the shopping cart functionality so that user can add food item
 
 ## ScreenShot
 
+![Home Page](frontend/src/assets/Screenshot (69).png)
 
 
 
