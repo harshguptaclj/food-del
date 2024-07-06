@@ -26,21 +26,21 @@ Further I created the shopping cart functionality so that user can add food item
 
 ## ScreenShot
 
-## Login Page
+### Login Page
 ![Login Page](frontend/src/assets/Screenshot%20(76).png)
-## Home Page
+### Home Page
 ![Home Page](frontend/src/assets/Screenshot%20(69).png)
-## Cart and Payment Page
+### Cart and Payment Page
 ![Cart and Payment Page](frontend/src/assets/Screenshot%20(70).png)
-## Stripe Payment Page
+### Stripe Payment Page
 ![Stripe Payment Page](frontend/src/assets/Screenshot%20(71).png)
-## My Order Page
+### My Order Page
 ![My Order Page](frontend/src/assets/Screenshot%20(72).png)
-## Admin Add Item Page
+### Admin Add Item Page
 ![Admin Add Item Page](frontend/src/assets/Screenshot%20(73).png)
-## Admin List Item Page
+### Admin List Item Page
 ![Admin List Item Page](frontend/src/assets/Screenshot%20(74).png)
-## Admin Manage Order Page
+### Admin Manage Order Page
 ![Admin Manage Order Page](frontend/src/assets/Screenshot%20(75).png)
 
 
