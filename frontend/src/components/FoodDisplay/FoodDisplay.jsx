@@ -4,12 +4,14 @@ import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import FoodItem from '../FoodItem/FoodItem'
 import Shimmer from '../Shimmer/Shimmer'
+import DummyFood from '../DummyFood/DummyFood'
 
 const FoodDisplay = ({category}) => {
 
     const {food_list} = useContext(StoreContext)
   return (
     <>
+    {!food_list.length?(<><DummyFood/><Shimmer /></>):(
       <div className="food-display" id="food-display">
         <h2>Top dishes near you</h2>
         {!food_list.length ? (
@@ -33,6 +35,7 @@ const FoodDisplay = ({category}) => {
           </div>
         )}
       </div>
+    )}
     </>
   );
 }

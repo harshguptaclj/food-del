@@ -1,0 +1,114 @@
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "6684d759705e5c694031ab53",
+            "name": "Greek salad",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 120,
+            "image": "1719981913586food_1.png",
+            "category": "Salad",
+            "__v": 0
+        },
+        {
+            "_id": "6684e012705e5c694031abc5",
+            "name": "Veg salad",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 180,
+            "image": "1719984146546food_2.png",
+            "category": "Salad",
+            "__v": 0
+        },
+        {
+            "_id": "6684e04c705e5c694031abc8",
+            "name": "Clover Salad",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 160,
+            "image": "1719984204687food_3.png",
+            "category": "Salad",
+            "__v": 0
+        },
+        {
+            "_id": "6684e077705e5c694031abca",
+            "name": "Chicken Salad",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 240,
+            "image": "1719984247623food_4.png",
+            "category": "Salad",
+            "__v": 0
+        },
+        {
+            "_id": "6684e0b3705e5c694031abcc",
+            "name": "Lasagna Rolls",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 140,
+            "image": "1719984307368food_5.png",
+            "category": "Rolls",
+            "__v": 0
+        },
+        {
+            "_id": "6684e0ee705e5c694031abd0",
+            "name": "Peri Peri Rolls",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 120,
+            "image": "1719984366509food_6.png",
+            "category": "Rolls",
+            "__v": 0
+        },
+        {
+            "_id": "6684e153705e5c694031abd6",
+            "name": "Ripple Ice Cream",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 140,
+            "image": "1719984467845food_9.png",
+            "category": "Deserts",
+            "__v": 0
+        },
+        {
+            "_id": "6684e1d7705e5c694031abde",
+            "name": "Chicken Sandwich",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 120,
+            "image": "1719984599507food_13.png",
+            "category": "Sandwich",
+            "__v": 0
+        },
+        {
+            "_id": "6684e298705e5c694031abe6",
+            "name": "Cup Cake",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 140,
+            "image": "1719984792166food_17.png",
+            "category": "Cake",
+            "__v": 0
+        },
+        {
+            "_id": "6684e342705e5c694031abee",
+            "name": "Garlic Mushroom",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 140,
+            "image": "1719984962267food_21.png",
+            "category": "Pure Veg",
+            "__v": 0
+        },
+        {
+            "_id": "6684e3dc705e5c694031abf6",
+            "name": "Cheese Pasta",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 120,
+            "image": "1719985116231food_25.png",
+            "category": "Pasta",
+            "__v": 0
+        },
+        {
+            "_id": "6684e49b705e5c694031abfe",
+            "name": "Butter Noodles",
+            "description": "Food provides essential nutrients for overall health and well-being",
+            "price": 140,
+            "image": "1719985307446food_29.png",
+            "category": "Noodles",
+            "__v": 0
+        }
+        
+    ]
+}
