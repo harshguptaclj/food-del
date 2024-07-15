@@ -1,13 +1,11 @@
 import React from 'react'
 import './DummyFood.css'
-import { useContext } from 'react'
-import { StoreContext } from '../../context/StoreContext'
-import FoodItem from '../FoodItem/FoodItem'
-import dummyFoodList from '../../assets/dummyFoodList.json'
+import DummyFoodItem from '../DummyFoodItem/DummyFoodItem'
+import {menuList } from '../../assets/dummyFoodList'
 
 
 const DummyFood = () => {
-  const food_list = dummyFoodList.data;
+  const food_list = menuList;
   return (
     <>
       <div className="food-display" id="food-display">
@@ -17,12 +15,12 @@ const DummyFood = () => {
           {food_list.map((item, index) => {
              {
               return (
-                <FoodItem
+                <DummyFoodItem
                   key={index}
                   id={item._id}
                   name={item.name}
-                  description={item.description}
                   price={item.price}
+                  description={item.description}
                   image={item.image}
                 />
               );

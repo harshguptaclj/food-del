@@ -83,7 +83,19 @@ export const assets = {
     bag_icon,
     parcel_icon,
     checked_icon,
-    unchecked_icon
+    unchecked_icon,
+    food_1,
+    food_2,
+    food_3,
+    food_4,
+    food_5,
+    food_6,
+    food_9,
+    food_13,
+    food_17,
+    food_21,
+    food_25,
+    food_29
 }
 
 export const menu_list = [
