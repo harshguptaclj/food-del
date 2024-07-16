@@ -7,20 +7,27 @@ import { toast } from 'react-toastify';
 
 const Navbar = ({setShowLogin}) => {
 
+  const {getTotalCartAmount,token,setToken, adminUrl} =useContext(StoreContext);
+
   const searchHandler=()=>{
     toast.info('Search feature is under development.')
   }
 
+  const adminHandler=()=>{
+    window.location.href = adminUrl;
+  }
+
   const [menu, setMenu] = useState("home");
 
-  const {getTotalCartAmount,token,setToken} =useContext(StoreContext);
+  
 
   const navigate= useNavigate();
   
   const logout =()=>{
     localStorage.removeItem("token");
     setToken("");
-    navigate("/")
+    navigate("/");
+    toast.success('Logout Successful');
   }
 
   return (
@@ -38,6 +45,7 @@ const Navbar = ({setShowLogin}) => {
           <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
           <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
+        <button onClick={adminHandler}>Admin</button>
         {!token?<button onClick={()=>setShowLogin(true)}>Sign In</button>
         : <div className="navbar-profile">
           <img src={assets.profile_icon} alt="" />
@@ -48,8 +56,8 @@ const Navbar = ({setShowLogin}) => {
           </ul>
         </div>
         }
-        
       </div>
+      
     </div>
   )
 }

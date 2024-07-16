@@ -8,11 +8,14 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   //const url ="http://localhost:4000";
   const url ="https://food-del-backend-mgb2.onrender.com";
+  //const adminUrl ="http://localhost:5174";
+  const adminUrl ="https://food-del-admin-4r5a.onrender.com";
+
   const [token,setToken]= useState("");
   const [food_list,setFoodList] = useState([]);
   const currency ="₹";
   const deliveryCharge= 40;
-
+  
   const addToCart = async(itemId) => {
     if (!cartItems[itemId]) {
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
@@ -82,7 +85,8 @@ const StoreContextProvider = (props) => {
     token,
     setToken,
     currency,
-    deliveryCharge
+    deliveryCharge,
+    adminUrl
   };
   return (
     <StoreContext.Provider value={contextValue}>

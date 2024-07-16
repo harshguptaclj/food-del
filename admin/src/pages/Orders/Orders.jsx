@@ -1,38 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Orders.css'
-import axios from 'axios'
-import {toast} from 'react-toastify'
 import {assets} from '../../assets/assets.js'
+import Sidebar from '../../components/Sidebar/Sidebar.jsx'
+import { StoreContext } from '../../context/StoreContext.jsx'
+import axios from 'axios'
 
-const Orders = ({url}) => {
+const Orders = () => {
 
-  const [orders,setOrders] = useState([]);
+  const {orders,  statusHandler} = useContext(StoreContext);
 
-  const fetchAllOrders =async ()=>{
-    const response = await axios.get(url+"/api/order/list");
-    if(response.data.success){
-      if(response.data.data)
-      setOrders(response.data.data);
-    }
-    else{
-      toast.error("Error");
-    }
-  }
-
-  const statusHandler = async (event,orderId)=>{
-      const response = await axios.post(url+"/api/order/status",{
-        orderId,
-        status:event.target.value
-      })
-      if(response.data.data){
-        await fetchAllOrders();
-      }
-  }
-
-  useEffect(()=>{
-    fetchAllOrders();
-  },[])
   return (
+    <>
+    <Sidebar/>
     <div className='order add'>
       <h3>Order Page</h3>
       <div className="order-list">
@@ -59,7 +38,7 @@ const Orders = ({url}) => {
             </div>
             <p>Items: {order.items.length}</p>
             <p>₹{order.amount}</p>
-            <select onChange={(event)=>{statusHandler(event,order._id)}}>
+            <select onChange={(event)=>{statusHandler(event,order._id)}} value={order.status}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for delivery">Out for delivery</option>
               <option value="Delievered">Delievered</option>
@@ -68,6 +47,7 @@ const Orders = ({url}) => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 
