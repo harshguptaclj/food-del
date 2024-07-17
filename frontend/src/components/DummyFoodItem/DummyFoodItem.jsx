@@ -20,7 +20,7 @@ const DummyFoodItem = ({id,name, price, description, image}) => {
       <div className="food-item-img-container">
         <img onClick={clickHandler} src={image} alt="" className="food-item-image" />
         {!cartItems[id] 
-            ?<img className='add' onClick={clickHandler} src={assets.add_icon_white} alt=""/>
+            ?<img className='add' onClick={clickHandler} src={assets.yellow_add_icon} alt=""/>
             :<div className='food-item-counter'>
                 <img onClick={clickHandler} src={assets.remove_icon_red} alt="" />
                 <p>{cartItems[id]}</p>

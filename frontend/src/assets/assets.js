@@ -61,6 +61,7 @@ import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 import checked_icon from './uck.png'
 import unchecked_icon from './ck.jpg'
+import yellow_add_icon from './yellow_add_icon.png'
 
 export const assets = {
     logo,
@@ -95,7 +96,8 @@ export const assets = {
     food_17,
     food_21,
     food_25,
-    food_29
+    food_29,
+    yellow_add_icon,
 }
 
 export const menu_list = [
