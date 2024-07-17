@@ -11,9 +11,9 @@ const DummyFoodItem = ({id,name, price, description, image}) => {
     const {cartItems} = useContext(StoreContext);
 
     const clickHandler=()=>{
-      toast.info("Kindly reopen the website to load actual data from backend.");
+      toast.info("Kindly wait few seconds as the website is loading actual data from backend.");
       toast.info("As free instances on this hosting platform spin down after periods of inactivity.");
-      toast.info("Sorry for inconvenience!");
+      toast.info("Try reopening the website if actual data is not loaded even after 60 seconds.");
     }
     return (
     <div className='food-item'>

@@ -6,8 +6,9 @@ const Shimmer = () => {
     <div className="bodi">
       <div className="cards">
       <div className="shimmer"></div>
-      <h3 className='text'>Notice: Kindly reopen the website, if food items are not loaded even after 10 seconds.
-      Because free instances on this hosting platform spin down after periods of inactivity.
+      <h3 className='text'>Kindly wait few seconds as the website is loading actual data from backend.
+      As free instances on this hosting platform spin down after periods of inactivity.
+      Try reopening the website if actual data is not loaded even after 60 seconds.
       Sorry for inconvinience! </h3>
       </div>
       {Array.from({ length: 32 }).map((el, i) => {
